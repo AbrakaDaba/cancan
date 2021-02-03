@@ -1,0 +1,105 @@
+footer {
+  background-color: #f2fff8;
+  padding: 25px 20px 0px 20px;
+
+  .footer_logo {
+    a {
+      img {
+        max-width: 175px;
+        width: 100%;
+        margin-top: -15px;
+      }
+    }
+  }
+
+  ul {
+    margin-top: 10px;
+    margin-bottom: 0;
+    width: auto;
+    padding: 0;
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    li {   
+      a {
+        color: #514d5b;
+        margin: 0 13px;
+      }
+      &:last-of-type{
+        a{
+          margin-right:0;
+        }
+   
+      }
+
+    }
+
+    .footer_nav_divider {
+      content: "";
+      height: 11px;
+      width: 1px;
+      background-color: #514d5b;
+      margin-top: 6px;
+      display: block;
+    }
+  }
+}
+@media (max-width: 768px) {
+footer{
+  padding-bottom: 12px;
+  padding-top: 22px;
+ .d-flex{
+   flex-direction: column;
+   align-items: left;
+  .footer_logo{
+    align-self: flex-start;
+    margin-bottom: 13px;
+    img{
+      max-width: 160px;
+      display: inline-block
+    }
+    }
+    ul{
+      align-self: flex-start;
+      li{ 
+      a{
+        font-size: 12px;
+      }
+      &:first-of-type{
+        a{   
+        margin-left: 0;
+      }
+    }
+      }
+      .footer_nav_divider{
+        display: none;
+      }
+    }
+    }
+ }
+}
+@media (max-width: 375px) {
+  footer{
+    .d-flex{   
+      ul{
+        li{ 
+        a{
+         margin: 0 8px;
+         font-size: 10px;
+        }
+      }
+    }
+  }
+  }
+}
+

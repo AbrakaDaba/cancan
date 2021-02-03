@@ -1,0 +1,248 @@
+.invest_steps {
+  padding: 0 35px;
+  margin-bottom: 120px;
+
+  h2 {
+    margin-bottom: 10px;
+
+    + p {
+      letter-spacing: 0.2px;
+      margin-bottom: 45px;
+    }
+  }
+}
+.white_box {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 70px 50px 105px;
+
+  .step_field {
+    width: 32%;
+    padding: 10px 15px;
+    position: relative;
+    float: left;
+
+    > img {
+      max-height: 65px;
+      height: 100%;
+      margin-bottom: 35px;
+    }
+    > h3 {
+      margin-bottom: 0;
+    }
+  }
+  .divider {
+    width: 1%;
+    height: 100%;
+    position: relative;
+    float: left;
+
+    .line-content {
+      height: 2px;
+      width: 100px;
+      background-color: #612df7;
+      border: 1px solid #612df7;
+      border-radius: 50px;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      margin-top: 37px;
+    }
+  }
+}
+
+.start_trading_box {
+  background-color: #14e191;
+  background-position: top -110px left 48%, bottom -40px right -50px;
+  -webkit-background-size: 150px;
+  -moz-background-size: 150px;
+  -o-background-size: 150px;
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-image: url(../../img/cannabis_left_green_img.svg), url(../../img/cannabis_left_green_img.svg);
+  color: #fff;
+  position: relative;
+  padding: 26px;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 1160px;;
+  margin: 0 auto;
+  margin-top: -175px;
+  margin-bottom: 115px;
+  .content_field {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 2;
+    .h3p_box {
+      text-align: left;
+      max-width: 50%;
+      margin: 0;
+      h3 {
+        line-height: 1;
+        padding: 5px 0 0 0;
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.start_trading_now {
+  max-width: 320px;
+  width: 100%;
+  height: 63px;
+  border-radius: 4px;
+  background-color: $purplish-blue;
+  color: white;
+}
+
+@media (max-width: 1199px) {
+  .invest_steps {
+    margin-bottom: 50px;
+
+    .white_box {
+      padding: 50px 20px 100px;
+    }
+  }
+    .start_trading_box {
+      max-width: 880px;
+      margin-top: -110px;
+      margin-bottom: 65px;
+      background-position: top -110px left 54%, bottom -40px right -50px;
+      .content_field {
+        .h3p_box {
+          h3 {
+            padding: 0;
+            margin-bottom: 4px;
+          }
+          p {
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+  }
+@media (max-width: 991px) {
+  .invest_steps {
+    .white_box {
+      padding-bottom: 130px;
+      .step_field {
+        img {
+          margin-bottom: 25px;
+          max-height: 55px;
+        }
+        h3 {
+          font-size: 18px;
+          line-height: 1.3;
+          margin-bottom: 25px;
+        }
+      }
+      .divider {
+        .line-content {
+          width: 60px;
+        }
+      }
+    }
+  }
+    .start_trading_box {
+      max-width: 640px;
+      margin-top: -135px;
+      margin-bottom: 45px;
+      background-position: top -60px left -9%, bottom -40px right -65px;
+      .content_field {
+        .h3p_box {
+          margin: 0 auto;
+          max-width: 600px;
+          h3 {
+            padding: 0;
+            margin-bottom: 4px;
+            text-align: center;
+          }
+          p {
+            line-height: 1.4;
+            text-align: center;
+            margin-bottom: 14px;
+          }
+        }
+        .start_trading_now {
+          margin: 0 auto;
+        }
+      }
+    }
+}
+
+@media (max-width: 768px) {
+  .invest_steps {
+    h2 {
+      // font-size: 24px;
+      // line-height: 1.5;
+      // letter-spacing: 0.5px;
+    }
+    p {
+      font-size: 14px;
+    }
+    .white_box {
+      padding-top: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-content: center;
+      .step_field {
+        width: auto;
+        img {
+          margin-bottom: 7px;
+        }
+        h3 {
+          margin: 24px;
+        }
+      }
+      .divider {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        .line-content {
+          height: 60px;
+          width: 3px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+    .start_trading_box {
+      width: 460px;
+      margin-top: -155px;
+      background-position: top -100px left -10%, bottom -60px right -70px;
+      .content_field {
+        .h3p_box {
+          h3 {
+            // font-size: 18px;
+            // line-height: 1.3;
+            // margin-bottom: 0;
+          }
+          p {
+            max-width: 380px;
+            margin: 15px 0px 25px 0;
+            // font-size: 12px;
+            
+          }
+        }
+        .start_trading_now {
+          line-height: 3 !important;
+          font-size: 20px;
+        }
+      }
+    }
+}
+@media (max-width: 576px) {
+.start_trading_box {
+  width: calc(100% - 20px);
+}
+}
+@media (max-width: 375px) {
+  .step_field{
+    p{
+      font-size: 12px;
+    }
+  }
+}
