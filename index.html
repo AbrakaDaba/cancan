@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="js/intl-tel-input-12.3.0/css/intlTelInput.css"/>
+    <link rel="stylesheet" href="scss/main.css">
+
+    <script src="js/jquery-3.3.1/jquery.min.js"></script>
+    <script src="js/i18next-11.3.3/i18n.min.js"></script>
+    <script src="js/intl-tel-input-12.3.0/js/intlTelInput.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="js/moment/moment.js"></script>
+
+    <script>
+        var ipdata = {"city":"Bjelovar","state":"Bjelovarsko-Bilogorska Zupanija","country":"Croatia","country_code":"HR","phone_code":{"name":"Croatia","dial_code":"385","code":"HR"}};
+    </script>
+
+    <script src="js/main.js"></script>
+
+    <title>Cannabis Wealth</title>
+</head>
+
+<body>
+    <!-- LOGO  -->
+    <div class="header-block">
+        <header class="container">
+            <div class="d-flex align-items-start justify-content-between header-top">
+                <a href="index.html" class="logo">
+                    <img src="./img/Logo_Cannabis_Wealth.png" alt="Logo_Cannabis_Wealth" />
+                </a>
+
+                <!--AVATAR IN WHITE LABEL / displayed on small screens-->
+                <div class="white_label mobile">
+                    <img src="./img/user_img.jpg" class="rounded-circle" alt="user_image">
+                    <span class="regular_font"><span data-i18n="user-made-name" class="text-style-8">Shaun J. just made</span>
+                        <span class="green text-style-9"><b data-i18n="user-made-ammount"> $1,500</b></span></span>
+                </div>
+
+                <!--TIMER IN RED LABEL / hidden on small screens-->
+                <div class="red_box_news d-flex desktop align-items-center justify-content-between">
+                    <p class="regular_font text-style-20px"><span data-i18n="just">Just</span> <span class="runningOutTime text-style-3">0:05:3</span>
+                        <span data-i18n="until-prices-drop">until the prices drop - HURRY!</span></p>
+                    <div class="white_label desktop">
+                        <span class="regular_font">
+                            <span class="text-style-16px-gray" data-i18n="exclusive-offer-for">Exclusive offer for traders in</span>
+                            <span class="text-style-16px-aqua-green"><b data-i18n="country-name">Serbia</b></span>
+                        </span>
+                        <img data-init="country-flag" src="./img/rs_flag.jpg" class="rounded-circle" alt="serbian-flag-image">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MAIN HEADING DESKTOP LONG-->
+            <h2 class="main_heading text-style-40px desktop">
+                <span data-i18n="people-are">People are </span>
+                <span class="green" data-i18n="cashing-in">cashing in</span>
+                <span data-i18n="on-cannabis-stocks">on Cannabis stocks!</span>
+            </h2>
+
+            <!-- MAIN HEADING MOBILE SHORT-->
+            <h2 class="main_heading text-style-40px mobile">
+                <span data-i18n="cannabis-stocks-are">Cannabis stocks are</span>
+                <span class="green" data-i18n="on-fire">on fire!</span>
+            </h2>
+
+            <p class="text-style-20px-slate-grey" data-i18n="get-in-on-the-action">Get in on the action now and make millions...</p>
+        </header>
+
+        <!--VIDEO & FORM WRAPPER-->
+        <div class="video-form-container container">
+            <div class="video_wrapper">
+                <div class="video_box embed-responsive embed-responsive-16by9">
+                    <video controls>
+                        <source src="./assets/bitcoin.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+
+                <div class="exclusive-offer-video mobile">
+                    <div class="col-12 white_label">
+                        <span class="regular_font text-style-16px-gray">
+                            <span data-i18n="exclusive-offer-for">Exclusive offer for traders in</span>
+                            <span class="green text-style-16px-aqua-green">
+                                <b data-i18n="country-name">Serbia</b>
+                            </span>
+                        </span>
+                        <img data-init="country-flag" src="./img/rs_flag.jpg" class="rounded-circle" alt="serbian-flag-image">
+                    </div>
+                </div>
+
+                <!--AVATAR IN WHITE LABEL / hidden on small screens-->
+                <div class="white_label avatar2 desktop">
+                    <img src="./img/user_img.jpg" class="rounded-circle" alt="user_image">
+                    <span class="regular_font text-style-8">
+                        <span data-i18n="user-made-name">Shaun J. just made</span>
+                        <span class="green text-style-9"><b data-i18n="user-made-ammount">$1,500</b></span></span>
+                </div>
+            </div>
+
+            <!--TIMER IN RED LABEL / displayed on small screens-->
+            <div class="container-fluid red_box_news timer2 mobile">
+                <div class="red_label">
+                    <p class="regular_font text-style-20px">
+                        <span data-i18n="just">Just</span>
+                        <span class="runningOutTime text-style-3">0:05:3</span>
+                        <span data-i18n="until-prices-drop">until the prices drop - HURRY!</span>
+                    </p>    
+                </div>
+            </div>
+
+            <!-- FORM -->
+            <div class="form_wrapper">
+                <div class="form_box">
+                    <div class="indicator_line_wrapper">
+                        <div class="indicator_line_box d-flex">
+                            <span class="indicator first-form-step active_span"></span>
+                            <span class="indicator second-form-step"></span>
+                            <span class="indicator third-form-step"></span>
+                        </div>
+                    </div>
+                    <h3 class="text-style-7" data-i18n="change-your-life-today">Change your life today!</h3>
+                    <form class="form-trade-now">
+                        <div class="row" id="first-form">
+                            <div class="col-6 cp-9">
+                                <input type="text" class="form-control" id="firstName" data-i18n="form-first-name-place-holder" placeholder="First Name">
+                            </div>
+                            <div class="col-6 cp-9">
+                                <input type="text" class="form-control" id="lastName" data-i18n="form-last-name-place-holder" placeholder="Last Name">
+                            </div>
+                            <div class="col-12 cp-9">
+                                <input type="email" class="form-control inputEmail" id="InputEmail1" data-i18n="form-email-place-holder" placeholder="Enter email">
+                            </div>
+                        </div>
+                        <div class="row" id="second-form">
+                            <div class="col-12 cp-9">
+                                <input type="password" class="form-control" id="password" data-i18n="form-password-place-holder" placeholder="Password"/>
+                            </div>
+                            <div class="col-12 cp-9">
+                                <input type="password" class="form-control" id="confirmPassword" data-i18n="form-password-place-holder-repeat" placeholder="Confirm Password"/>
+                            </div>
+                        </div>
+                        <div class="row" id="third-form">
+                            <div class="col-12 cp-9">
+                                <input type="tel" class="form-control" id="phoneNumber" placeholder=""/>
+                            </div>
+                        </div>
+                        <div class="action-button">
+                                <button class="btn-lg col-12 col-sm-8 offset-sm-2 form_submit_btn text-style-10" data-i18n="start-trading-now">Start
+                                        trading now!</button>
+                        </div>
+                    </form>
+                    <div class="form_logo_box col-12 col-xl-10 offset-xl-1 text-center">
+                        <img class="svg norton" src="./img/norton-logo.svg" alt="norton-logo_logo">
+                        <img class="svg secure-trading" src="./img/st-logo.svg" alt="st_logo">
+                        <img class="svg mcafee" src="./img/mcafee-logo.svg" alt="Mcafee_logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WORLD RENOWNED PRODUCT-->
+    <div class="container-fluid world_renowned p-0">
+        <div class="green-cover">
+            <div class="container">
+                <h2 class="col-12 col-lg-8 offset-lg-2 col-md-10 offset-md-1 text-style-11" data-i18n="world-renowed-product">World renowned product</h2>
+                <p class="col-12 col-lg-8 offset-lg-2 col-md-10 offset-md-1  text-style-12" data-i18n="cannabis-code-has-been">Cannabis Code has been featured
+                    in some of the biggest
+                    media
+                    companies in the word.
+                    Our phenomenal product has been mentioned by:</p>
+                <div class="logo_box col-12 col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1 text-center">
+                    <img class="svg" src="./img/cnn-logo.svg" alt="cnn_logo">
+                    <img class="svg" src="./img/time-logo.svg" alt="time_logo">
+                    <img class="svg" src="./img/financialtimes-logo.svg" alt="ft_logo">
+                    <img class="svg" src="./img/forbes-logo.svg" alt="forbes_logo">
+                </div>
+                <div class="logo_box logo_box2 col-lg-8 offset-lg-2 col-12 col-md-10 offset-md-1 col-sm-10 offset-sm-1 text-center">
+                    <img class="svg" src="./img/newyorktimes-logo.svg" alt="nytimes_logo">
+                    <img class="svg" src="./img/cnbc-logo.svg" alt="cnbc_logo">
+                    <img class="svg" src="./img/usatoday-logo.svg" alt="usa_today_logo">
+                </div>
+                <div class="green_world_renowned_box col-12">
+                    <div class="row">
+
+                        <div class="col-12 col-xl-3 cp-9 col-lg-4 offset-lg-2 offset-xl-0 col-md-5 offset-md-1 col-sm-6">
+                            <div class="wr_box_wrapper text-center">
+                                <div class="wr_box">
+                                    <img src="./img/security_icon.svg" alt="security_icon">
+                                    <h3 class="text-style-13" data-i18n="fast-and-secure">Fast & Secure</h3>
+                                    <p class="text-style-14" data-i18n="fast-and-secure-description">This is an example paragraph that should be filled with text
+                                        that
+                                        briefly explains
+                                        why this is fast and secure option for all our new clients.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xl-3 cp-9 col-lg-4 col-md-5 col-sm-6">
+                            <div class="wr_box_wrapper text-center">
+                                <div class="wr_box">
+                                    <img src="./img/simple_icon.svg" alt="proces_icon">
+                                    <h3 class="text-style-13" data-i18n="simple-process">Simple process</h3>
+                                    <p class="text-style-14" data-i18n="simple-process-description">This is an example paragraph that should be filled with text
+                                        that
+                                        briefly explains
+                                        how simple it is to sign up and get started with our amazing product.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xl-3 cp-9 col-lg-4 offset-lg-2 offset-xl-0 col-md-5 offset-md-1 col-sm-6">
+                            <div class="wr_box_wrapper text-center">
+                                <div class="wr_box">
+                                    <img src="./img/gains_icon.svg" alt="gains_icon">
+                                    <h3 class="text-style-13" data-i18n="big-gains">Big gains</h3>
+                                    <p class="text-style-14" data-i18n="big-gains-description">This is an example paragraph that should be filled with text
+                                        that
+                                        briefly explains
+                                        how all of our clients can earn money by using our amazing product.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xl-3 cp-9 col-lg-4 col-md-5 col-sm-6">
+                            <div class="wr_box_wrapper text-center">
+                                <div class="wr_box">
+                                    <img src="./img/tech_icon.svg" alt="tech_icon">
+                                    <h3 class="text-style-13" data-i18n="superior-tech">Superior tech</h3>
+                                    <p class="text-style-14" data-i18n="superior-tech-description">This is an example paragraph that should be filled with text
+                                        that
+                                        briefly explains
+                                        how all of our technology is cutting edge.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- TABLE -->
+    <div class="container table_box">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-style-40px" data-i18n="track-your-success-live">Track your success live.</h2>
+                <div class="table_btn_wrapper">
+                    <table class="tracking">
+                        <thead>
+                            <tr class="text-style-30">
+                                <th class="head_symbol data_symbol text-style-31" data-i18n="head_symbol">Symbol</th>
+                                <th class="head_company data_company text-style-32" data-i18n="head_company">Company</th>
+                                <th class="head_lastPrice data_lastPrice text-style-29" data-i18n="head_lastPrice">Last price</th>
+                                <th class="head_change data_change text-style-33" data-i18n="head_change">Change</th>
+                                <th class="head_change_perc data_change_perc text-style-33" data-i18n="head_change_perc">%Change</th>
+                                <th class="head_marketTime data_marketTime text-style-32" data-i18n="head_marketTime">Market time</th>
+                                <th class="head_volume data_volume text-style-32" data-i18n="head_volume">Volume</th>
+                                <th class="head_marketCap data_marketCap text-style-32" data-i18n="head_marketCap">Market Cap</th>
+                            </tr>
+                        </thead>
+                        <tbody> </tbody>
+                    </table>
+                    <a href="javascript:void(0)" class="start_trading_now btn btn-primary text-style-10 move-to-top" data-i18n="start-trading-now">Start trading now!</a>
+                </div>
+                <div class="cannabis_stamp"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CUSTOMERS STORIES-->
+    <div class="container stories">
+        <div class="row row_first">
+            <h2 class="col-12 text-style-40px" data-i18n="what-our-customers-say">What our customers are saying</h2>
+        </div>
+        <div class="row row_second">
+            <div class="story_box_wrapper cp-9 col-12 col-md-6 col-xl-4">
+                <div class="story_box1">
+                    <div class="quotes_dots">
+                        <img src="./img/quotes_icon1.svg" alt="">
+
+                    </div>
+                    <p class="text-style-15" data-i18n="customer-1-say">I never even tought this could win me so much money. I got into these
+                        stocks for fun, but I’ve
+                        cashed out some serious amounts. I recommend getting yourself some stocks before people figure
+                        out how good this opportunity is and the prices start to drop. This is the best time to invest
+                        in cannabis stocks!</p>
+                    <div class="customer_id">
+                        <img src="./img/user_img.jpg" alt="User_photo" class="rounded-circle">
+                        <span class="customer_name pl-3 text-style-34">
+                            <span data-i18n="customer-1-name">George Chandler</span>
+                            <span class="customer_city_country text-style-18 text-style-34" data-i18n="customer-1-location">Detroit, USA</span></span>
+                    </div>
+                    <img class="cannabis" src="./img/cannabis_icon.svg" alt="cannabis image">
+                    <span class="white text-style-17 pl-4" data-i18n="customer-1-made">Made 720K with Cannabis Code.</span>
+                </div>
+            </div>
+
+            <div class="story_box_wrapper cp-9 col-12 col-md-6 col-xl-4">
+                <div class="story_box">
+                    <p class="text-style-14" data-i18n="customer-2-say">I have been with Cannabis Code for just 6 months and I’ve already made 20x
+                        profits. This is an
+                        insane return on investment. If you’re into the cannabis market, I absolutely recommend
+                        Cannabis Code.</p>
+                    <div class="cannabis-made-with">
+                        <img class="cannabis" src="./img/cannabis_icon_green.svg" alt="cannabis image">
+                        <span class="text-style-17 pl-2" data-i18n="customer-2-made">Made 9M with Cannabis Code.</span>
+                    </div>
+                    <div class="customer_id">
+                        <img src="./img/user_img.jpg" alt="User_photo" class="rounded-circle">
+                        <span class="customer_name text-style-18 pl-3" data-i18n="customer-2-name">Simon Lucas</span>
+                    </div>
+                </div>
+            </div>
+            <div class="story_box_wrapper cp-9 col-12 col-md-6 col-xl-4">
+                <div class="story_box">
+                    <p class="text-style-14" data-i18n="customer-3-say">I’ve been in the market from the beginning and haven’t seen any product do
+                        this good! Cannabis
+                        Code can definitely change your life for the better! Take it from someone who made over 2M in
+                        just the last 9 months.</p>
+                    <div class="cannabis-made-with">
+                        <img class="cannabis" src="./img/cannabis_icon_green.svg" alt="cannabis image">
+                        <span class="text-style-17 pl-2" data-i18n="customer-3-made">Made 9M with Cannabis Code.</span>
+                    </div>
+                    <div class="customer_id">
+                        <img src="./img/user_img.jpg" alt="User_photo" class="rounded-circle">
+                        <span class="customer_name text-style-18 pl-3" data-i18n="customer-3-name">Simon Lucas</span>
+                    </div>
+                </div>
+            </div>
+            <div class="story_box_wrapper cp-9 col-12 col-md-6 col-xl-4">
+                <!-- <div class="fake-row"> -->
+                    <!-- <div class="fake-box col-lg-6 col-xl-auto col-md-6 p-0"> -->
+                        <div class="story_box">
+                            <p class="text-style-14" data-i18n="customer-4-say">Just go with it. You can’t go wrong with Cannabis Code. They are the best
+                                in the business right
+                                now.</p>
+
+                            <div class="cannabis-made-with">
+                                <img class="cannabis" src="./img/cannabis_icon_green.svg" alt="cannabis image">
+                                <span class="text-style-17 pl-2" data-i18n="customer-4-made">Made 9M with Cannabis Code.</span>
+                            </div>
+                            <div class="customer_id">
+                                <img src="./img/user_img.jpg" alt="User_photo" class="rounded-circle">
+                                <span class="customer_name text-style-18 pl-3" data-i18n="customer-4-name">Simon Lucas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="fake-box col-lg-6 col-xl-auto  col-md-6 p-0"> -->
+                            <div class="story_box_wrapper col-12 cp-9 col-md-6 col-xl-4">    
+                        <div class="story_box">
+                            <p class="text-style-14" data-i18n="customer-5-say">If you have any doubts, let me help you - Get these stocks rigth now!
+                                There is no better
+                                time to invest in the cannabis stocks than right now. Prices are on the rise and you can
+                                only win, but it’s not gonna last for that long. Take your seat while you can!</p>
+                            <div class="cannabis-made-with">
+                                <img class="cannabis" src="./img/cannabis_icon_green.svg" alt="cannabis image">
+                                <span class="text-style-17 pl-2" data-i18n="customer-5-made">Made 9M with Cannabis Code.</span>
+                            </div>
+                            <div class="customer_id">
+                                <img src="./img/user_img.jpg" alt="User_photo" class="rounded-circle">
+                                <span class="customer_name text-style-18 pl-3" data-i18n="customer-5-name">Simon Lucas</span>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+
+    <!-- WHY TO INVEST-->
+    <div class="container-fluid invest_reasons">
+        <div class="row">
+
+            <h2 class="col-12 text-style-11" data-i18n="why-invest-right-now">Why invest right now</h2>
+            <p class="col-12 text-style-12" data-i18n="why-invest-right-now-desc">Now is the best time to get started in trading cannabis stocks. Check out
+                the
+                stats below to see just
+                why!</p>
+            <div class="container">
+                <div class="row">
+                    <div class="reasons_field col-12 col-md-6 col-lg-3">
+                        <span class="curved_white_line text-style-19">100%</span>
+                        <p class="regular_font text-style-20" data-i18n="of-stock-are">Of stocks are on the rise and the trend isn’t slowing
+                            down any time
+                            soon.</p>
+                    </div>
+                    <div class="reasons_field  col-12 col-md-6 col-lg-3">
+                        <span class="curved_white_line text-style-19">99.9%</span>
+                        <p class="regular_font text-style-20" data-i18n="chance-of-success">Chance of success with Cannabis Code. Almost a 100% of
+                            our
+                            customers
+                            make a profit.</p>
+                    </div>
+                    <div class="reasons_field  col-12 col-md-6 col-lg-3">
+                        <span class="curved_white_line text-style-19">200B</span>
+                        <p class="regular_font text-style-20" data-i18n="estimated-market-cap">Estimated market cap by the year 2022, over the 5M market
+                            cap in
+                            the
+                            2018.</p>
+                    </div>
+                    <div class="reasons_field  col-12 col-md-6 col-lg-3">
+                        <span class="curved_white_line text-style-19">60%</span>
+                        <p class="regular_font text-style-20" data-i18n="of-our-users-make">Of our users make over $1 million and over 20% of our
+                            users make
+                            over
+                            $5 million.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="photo_box col-12 col-md-6">
+                        <div class="ceo_photo"><img src="./img/jacob_walters.png" alt="Jacob_Walters_CEO_photo" class="img-fluid">
+                            <img src="./img/dots_for_img.svg" alt="photo decoration image" class="dots_photo">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="quotes_logo">
+                            <img src="./img/quotes_icon.svg" alt="quotes_image">
+                            <img src="./img/Logo_Cannabis_Wealth_white.png" alt="Logo_Cannabis_Wealth">
+                        </div>
+                        <p class="text-style-21" data-i18n="our-ceo-long-word">This is a long word from our CEO. He is saying all the nice things
+                            about our company. We
+                            will
+                            definitely make a sale if we use this section to improve relations with the customers.
+                            Go
+                            ahead, buy our product.</p>
+                        <div class="ceo_n_logo"><small class="text-style-22">Jacob Walters, CEO</small><img src="./img/Logo_Cannabis_Wealth_white.png" alt="Logo_Cannabis_Wealth"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HOW TO INVEST -->
+    <div class="container-fluid container text-center invest_steps">
+        <div class="row">
+            <h2 class="text-style-40px col-12 col-lg-8 offset-lg-2 col-md-10 offset-md-1" data-i18n="step-how-to-invest">How to invest in cannabis stocks</h2>
+            <p class="col-12 col-lg-6 offset-lg-3 col-md-10 offset-md-1 text-style-23" data-i18n="steps-how-to-invest-desc">The process of investing in cannabis stocks is very
+                simple. Just
+                follow our 3 steps recipe below and you’ll be trading in no time.</p>
+            <div class="white_box container">
+
+                <div class="step_field">
+                    <img src="./img/laptop_icon.svg" alt="laptop_icon">
+                    <h3 class="text-style-13" data-i18n="register-on-the-website">Register on the website</h3>
+                    <p class="text-style-24" data-i18n="register-click-on-the">Click on the button below to start the simple 2 step registration process.</p>
+                </div>
+
+                <div class="divider">
+                    <div class="line-content"></div>
+                </div>
+
+                <div class="step_field">
+                    <img src="./img/briefcase_icon.svg" alt="briefcase_icon">
+                    <h3 class="text-style-13" data-i18n="step-top-up">Top up your account</h3>
+                    <p class="text-style-24" data-i18n="step-top-up-desc">After you register, you will gain access to your dashboard where you can
+                        top up funds
+                        for trading.</p>
+                </div>
+
+                <div class="divider">
+                    <div class="line-content"></div>
+                </div>
+
+                <div class="step_field">
+                    <img src="./img/chart_icon.svg" alt="chart_icon">
+                    <h3 class="text-style-13" data-i18n="start-trading">Start trading</h3>
+                    <p class="text-style-24" data-i18n="start-trading-once">Once you setup your funds, you will be able to start trading cannabis
+                        funds and start
+                        earning!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+            <div class="start_trading_box">
+                <div class="content_field">
+                    <div class="h3p_box">
+                        <h3 class="text-style-25" data-i18n="step-start-trading-today">Start trading today and earn
+                            millions!</h3>
+                        <p class="text-style-26" data-i18n="step-start-trading-today-desc">Cannabis stocks are the way to go in 2019! Be the first to gain from
+                            this trend!</p>
+                    </div>
+                    <a href="javascript:void(0)" class="start_trading_now text-style-10 move-to-top" data-i18n="start-trading-now">Start trading now!</a>
+                </div>
+            </div>
+
+
+    <!-- FAQ -->
+    <div class="container faq">
+        <div class="row">
+            <h2 class="col-12 text-style-40px" data-i18n="faq-title">Frequently asked questions</h2>
+            <div class="faq_box col-12 col-md-6 col-lg-4">
+                <div class="faq_number text-style-27">01</div>
+                <h3 class="text-style-28" data-i18n="faq-q1">Is this legitimate?</h3>
+                <p class="text-style-14"  data-i18n="faq-a1">Yes, ofcourse this is legitimate. Some long answer that fills out a lot of
+                    space in the frequently
+                    asked
+                    questions section, just so it could look pretty on the page.</p>
+            </div>
+            <div class="faq_box col-12 col-md-6 col-lg-4">
+                <div class="faq_number text-style-27">02</div>
+                <h3 class="text-style-28"  data-i18n="faq-q2">How do I earn money?</h3>
+                <p class="text-style-14"  data-i18n="faq-a2">Something that explains this. Some long answer that fills out a lot of space
+                    in the frequently asked
+                    questions section, just so it could look pretty on the page.</p>
+            </div>
+            <div class="faq_box col-12 col-md-6 col-lg-4">
+                <div class="faq_number text-style-27">03</div>
+                <h3 class="text-style-28" data-i18n="faq-q3">How fast do I earn?</h3>
+                <p class="text-style-14" data-i18n="faq-a3">An explanatory paragraph. Some long answer that fills out a lot of space in
+                    the frequently asked
+                    questions section, just so it could look pretty on the page.</p>
+            </div>
+            <div class="faq_box col-12 col-md-6 col-lg-4">
+                <div class="faq_number text-style-27">04</div>
+                <h3 class="text-style-28" data-i18n="faq-q4">Why would I invest?</h3>
+                <p class="text-style-14" data-i18n="faq-a4">Yes, ofcourse this is legitimate. Some long answer that fills out a lot of
+                    space in the frequently
+                    asked
+                    questions section, just so it could look pretty on the page.</p>
+            </div>
+            <div class="faq_box col-12 col-md-6 col-lg-4">
+                <div class="faq_number text-style-27">05</div>
+                <h3 class="text-style-28" data-i18n="faq-q5">How much can I invest?</h3>
+                <p class="text-style-14" data-i18n="faq-a5">Something that explains this. Some long answer that fills out a lot of space
+                    in the frequently asked
+                    questions section, just so it could look pretty on the page.</p>
+            </div>
+            <div class="faq_box col-12 col-md-6 col-lg-4">
+                <div class="faq_number text-style-27">06</div>
+                <h3 class="text-style-28" data-i18n="faq-q6">What is the minimum investment?</h3>
+                <p class="text-style-14" data-i18n="faq-a6">An explanatory paragraph. Some long answer that fills out a lot of space in
+                    the frequently asked
+                    questions section, just so it could look pretty on the page.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container p-0 p-md-3 d-flex align-items-center justify-content-between">
+            <div class="footer_logo">
+                <a href="index.html"><img src="./img/Logo_Cannabis_Wealth.png" alt="Logo_Cannabis_Wealth"></a>
+            </div>
+
+            <ul class="list-unstyled text-style-29">
+                <li><a href="index.html" data-i18n="footer-home">Home</a></li>
+                <span class="footer_nav_divider"></span>
+                <li><a href="index.html" data-i18n="footer-pp">Privacy Policy</a></li>
+                <span class="footer_nav_divider"></span>
+                <li><a href="index.html" data-i18n="footer-cp">Cookie Policy</a></li>
+                <span class="footer_nav_divider"></span>
+                <li><a href="index.html" data-i18n="footer-cu">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="congratulations" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-horizontal">
+                <div class="modal-center">
+                    <div class="modal-content">
+                        <div class="modal-background"></div>
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="congratulationsLabel">Congratulations</h5>
+                            <p>You have registered to Cannabis Code. Here is a recommended broker for you</p>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-white">
+                                <img class="logo-modal" src="./img/Logo_Cannabis_Wealth.png" alt="Logo_Cannabis_Wealth" />
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <p class="total_rating">4.8</p>
+                                    <div class="reviews-block">
+                                        <img class="stars" src="./img/5stars.svg" alt="market">
+                                        <span>140 reviews</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="text-style-10 btn btn-primary" data-i18n="start-trading-now">Start trading now!</button>
+                            <div class="modal-priority">
+                                <h4><i class="brshield"></i> Your Safety Is our Priority</h4>
+                                <p>As determined by its refulatory status 365 Markets takes strict measures to safeguard client's funds and their privacy</p>
+                            </div>
+                            <div class="inner">&nbsp;</div>
+                            <div class="modal-priority">
+                                <h4><i class="brmoney"></i>High payout options</h4>
+                                <p>365 Markets offers up to 88% return per successful trade!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loadingModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-horizontal">
+                <div class="modal-center">
+                    <div class="modal-content modal-speen">
+                        <div class="modal-background"></div>
+                        <div class="modal-body form_wrapper">
+                            <div class="form_box">
+                                <div class="loader-number">45%</div>
+                                <div class="loader"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
