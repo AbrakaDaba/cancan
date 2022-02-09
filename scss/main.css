@@ -1752,7 +1752,7 @@ p {
   font-size: 30px;
   width: 215px;
   height: 64px;
-  background-image: url(../../img/curved_white_line.svg);
+  background-image: url(./../img/curved_white_line.svg);
   background-repeat: no-repeat;
   display: block;
   margin-bottom: 20px;
